@@ -1288,11 +1288,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/x/dotnet/webapi/BusDetailsSystem/BusDetailsSystem.csproj",
+      "projectUniqueName": "/home/x/fullstack/bus-details-management-system/server/BusDetailsSystem.csproj",
       "projectName": "BusDetailsSystem",
-      "projectPath": "/home/x/dotnet/webapi/BusDetailsSystem/BusDetailsSystem.csproj",
+      "projectPath": "/home/x/fullstack/bus-details-management-system/server/BusDetailsSystem.csproj",
       "packagesPath": "/home/x/.nuget/packages/",
-      "outputPath": "/home/x/dotnet/webapi/BusDetailsSystem/obj/",
+      "outputPath": "/home/x/fullstack/bus-details-management-system/server/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/x/.nuget/NuGet/NuGet.Config"

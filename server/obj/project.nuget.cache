@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VvF4NlAlnZX8elZkgc2fEQ0Zv+khyAxVoomqY+C0Q07w4Z7/mQDw9yqd32yKMs8MTPy2Y2yjOn+ML8eJPVDPYQ==",
+  "dgSpecHash": "DdArYKrKWYoVwU4GnCe1zSuapbxOkc2g9exBTYISeGIja0m8WAjjVxg5bjUZLgv+SFNjn4bY+e3oHHuf6Di5gQ==",
   "success": true,
-  "projectFilePath": "/home/x/dotnet/webapi/BusDetailsSystem/BusDetailsSystem.csproj",
+  "projectFilePath": "/home/x/fullstack/bus-details-management-system/server/BusDetailsSystem.csproj",
   "expectedPackageFiles": [
     "/home/x/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/x/.nuget/packages/microsoft.aspnetcore.cors/2.2.0/microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
