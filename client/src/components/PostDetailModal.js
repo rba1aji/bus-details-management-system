@@ -30,7 +30,7 @@ function PostDetailModal(props) {
 
     function to12hr(time) {
         let hr = parseInt(time[0] + time[1]);
-        console.log(hr);
+        // console.log(hr);
         if (hr > 12) {
             hr = "" + (hr - 12);
 
@@ -61,7 +61,7 @@ function PostDetailModal(props) {
         bus.originTime = to12hr(originTime.a);
         bus.destinationTime = to12hr(destinationTime.a);
 
-        console.log(bus);
+        // console.log(bus);
 
         axios({
             method: 'post',
@@ -161,7 +161,7 @@ function PostDetailModal(props) {
                                     <TimePicker
                                         value={originTime.a}
                                         onChange={(val) => {
-                                            console.log(val);
+                                            // console.log(val);
                                             originTime.a = val;
                                             setOriginTime(originTime)
                                             // bus.destinationTime = val + document.getElementById("destselect").value;
