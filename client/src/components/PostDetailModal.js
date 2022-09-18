@@ -90,13 +90,21 @@ function PostDetailModal(props) {
 
     return (
         <>
-            <Button variant="warning" onClick={handleShow}>
-                {props.to ?
+            {props.to ?
+                <Button variant="warning" onClick={handleShow}>
                     <h4 className='mb-0 px-4 py-1' style={{ color: 'black' }}>
                         Post a Bus Detail
-                    </h4> : <></>
-                }
-            </Button>
+                    </h4>
+                </Button>
+                : <></>}
+            {props.details.length == 0 ? <>
+                <br />
+                <h1 style={{ fontSize: '200px' }} className="bus-emoji">
+                    {/* &#128653; */}
+                    &#128652;
+                </h1></> :
+                <></>
+            }
 
             <Modal
                 show={show} onHide={handleClose} centered

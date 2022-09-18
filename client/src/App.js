@@ -7,6 +7,7 @@ import PostDetailModal from './components/PostDetailModal'
 // import { FaRegEdit } from 'react-icons/fa';
 import DetailCard from './components/DetailCard';
 import { AppState } from './reducers/AppContext';
+import { propTypes } from 'react-bootstrap/esm/Image';
 
 function App() {
   const [from, setFrom] = useState('');
@@ -47,7 +48,7 @@ function App() {
         </Table>
       </Form>
       <div className='text-center'>
-        <PostDetailModal from={from} to={to} />
+        <PostDetailModal from={from} to={to} details={details}/>
       </div>
       <br />
       <div>
