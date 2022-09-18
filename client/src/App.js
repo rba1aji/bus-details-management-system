@@ -13,7 +13,7 @@ function App() {
   const [from, setFrom] = useState('');
   const [to, setTo] = useState('');
   const [details, setDetails] = useState([]);
-  const { getRefresh} = AppState();
+  const { getRefresh } = AppState();
 
   useEffect(() => {
     axios.get(`https://localhost:7252/api/BusDetails/${from}2${to}`)
@@ -37,18 +37,18 @@ function App() {
           <tbody>
             <tr style={{ borderColor: 'transparent' }}>
               <td>
-                <Form.Control size="lg" type="text" placeholder="FROM" onChange={(e) => setFrom(e.target.value)} />
+                <Form.Control size={window.innerWidth > 600 ? "lg" : "md"} type="text" placeholder="FROM" onChange={(e) => setFrom(e.target.value)} />
               </td>
               {to ? <td className='mb-0 pt-3'><h4>to</h4></td> : <></>}
               <td>
-                <Form.Control size="lg" type="text" placeholder="TO" onChange={(e) => setTo(e.target.value)} />
+                <Form.Control size={window.innerWidth > 600 ? "lg" : "md"} type="text" placeholder="TO" onChange={(e) => setTo(e.target.value)} />
               </td>
             </tr>
           </tbody>
         </Table>
       </Form>
       <div className='text-center'>
-        <PostDetailModal from={from} to={to} details={details}/>
+        <PostDetailModal from={from} to={to} details={details} />
       </div>
       <br />
       <div>
