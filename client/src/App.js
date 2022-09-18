@@ -37,19 +37,32 @@ function App() {
           <tbody>
             <tr style={{ borderColor: 'transparent' }}>
               <td>
-                <Form.Control size={window.innerWidth > 600 ? "lg" : "md"} type="text" placeholder="FROM" onChange={(e) => setFrom(e.target.value)} />
+                {/* {window.innerWidth > 600 ? "lg" : "md"} */}
+                <Form.Control size="lg" type="text" placeholder="FROM" onChange={(e) => setFrom(e.target.value)} />
               </td>
               {to ? <td className='mb-0 pt-3'><h4>to</h4></td> : <></>}
               <td>
-                <Form.Control size={window.innerWidth > 600 ? "lg" : "md"} type="text" placeholder="TO" onChange={(e) => setTo(e.target.value)} />
+                <Form.Control size="lg" type="text" placeholder="TO" onChange={(e) => setTo(e.target.value)} />
               </td>
             </tr>
           </tbody>
         </Table>
       </Form>
+
       <div className='text-center'>
         <PostDetailModal from={from} to={to} details={details} />
+
+        {details.length == 0 ? <>
+          <br />
+          <br />
+          <h1 style={{ fontSize: window.innerWidth > 600 ? '200px' : '100px' }} className="bus-emoji">
+            {/* &#128653; */}
+            &#128652;
+          </h1></> :
+          <></>
+        }
       </div>
+
       <br />
       <div>
         {details.length ? <h3 className='text-center mb-0 pt-2'>Available bus details</h3> : <></>}

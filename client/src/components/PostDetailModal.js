@@ -97,14 +97,6 @@ function PostDetailModal(props) {
                     </h4>
                 </Button>
                 : <></>}
-            {props.details.length == 0 ? <>
-                <br />
-                <h1 style={{ fontSize: window.innerWidth>600? '200px':'100px' }} className="bus-emoji">
-                    {/* &#128653; */}
-                    &#128652;
-                </h1></> :
-                <></>
-            }
 
             <Modal
                 show={show} onHide={handleClose} centered

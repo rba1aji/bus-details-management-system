@@ -85,7 +85,7 @@ h5 {
 
 .bus-emoji {
   /* position: absolute; */
-  animation:alternate infinite;
+  animation:alternate-reverse infinite;
   animation-name: run;
   animation-duration: 6.5s;
   z-index: -1;
