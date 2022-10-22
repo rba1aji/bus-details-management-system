@@ -5,7 +5,8 @@
     "dotnet-ef": {
       "version": "6.0.10",
       "commands": [
-        "dotnet-ef"
+        "dotnet-ef",
+        "dotnet-ef update database"
       ]
     }
   }
