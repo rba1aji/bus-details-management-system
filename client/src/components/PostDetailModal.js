@@ -3,6 +3,7 @@ import { Button, Modal, Form } from 'react-bootstrap';
 import axios from 'axios';
 import TimePicker from 'react-time-picker';
 import { AppState } from '../reducers/AppContext'
+import { apihost } from '../reducers/apihost';
 
 function PostDetailModal(props) {
     const [show, setShow] = useState(false);
@@ -65,7 +66,7 @@ function PostDetailModal(props) {
 
         axios({
             method: 'post',
-            url: 'https://localhost:7252/api/busDetails',
+            url: `${apihost}/api/busDetails`,
             data: bus
         })
             .then((res) => {

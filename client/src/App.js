@@ -8,6 +8,7 @@ import PostDetailModal from './components/PostDetailModal'
 import DetailCard from './components/DetailCard';
 import { AppState } from './reducers/AppContext';
 import { propTypes } from 'react-bootstrap/esm/Image';
+import { apihost } from './reducers/apihost';
 
 function App() {
   const [from, setFrom] = useState('');
@@ -16,7 +17,7 @@ function App() {
   const { getRefresh } = AppState();
 
   useEffect(() => {
-    axios.get(`https://localhost:7252/api/BusDetails/${from}2${to}`)
+    axios.get(`${apihost}/api/BusDetails/${from}2${to}`)
       .then((res) => {
         console.log(res);
         setDetails(res.data);

@@ -16,7 +16,7 @@ builder.Services.AddCors(options =>
                       {
                         //   policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
 
-                          policy.WithOrigins("http://localhost:3000", "https://localhost:3000", "https://busdtl.vercel.app").AllowAnyMethod().AllowAnyHeader();
+                          policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
                       });
 });
 
