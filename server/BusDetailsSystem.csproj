@@ -7,8 +7,9 @@
   </PropertyGroup>
 
   <Target Name="PrePublishTarget" AfterTargets="Publish">
-    <Exec Command="dotnet ef database update" />
-  </Target>
+    <Exec Command="echo  &quot;Migrating Database ...&quot;" />
+    <Exec Command="dotnet-ef database update"/>
+</Target>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
