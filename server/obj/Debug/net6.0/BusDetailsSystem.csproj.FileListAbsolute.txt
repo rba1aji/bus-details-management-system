@@ -40,10 +40,8 @@
 /home/x/fullstack/bus-details-management-system/server/bin/Debug/net6.0/BusDetailsSystem.runtimeconfig.json
 /home/x/fullstack/bus-details-management-system/server/bin/Debug/net6.0/BusDetailsSystem.dll
 /home/x/fullstack/bus-details-management-system/server/bin/Debug/net6.0/BusDetailsSystem.pdb
-/home/x/fullstack/bus-details-management-system/server/bin/Debug/net6.0/Humanizer.dll
 /home/x/fullstack/bus-details-management-system/server/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
 /home/x/fullstack/bus-details-management-system/server/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
-/home/x/fullstack/bus-details-management-system/server/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
 /home/x/fullstack/bus-details-management-system/server/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
 /home/x/fullstack/bus-details-management-system/server/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
 /home/x/fullstack/bus-details-management-system/server/bin/Debug/net6.0/Microsoft.OpenApi.dll
